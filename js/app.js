@@ -1,8 +1,8 @@
 // Declaring variables
 let chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
-const body = document.querySelector('body');
+const colourArea = document.querySelector('.colourArea');
 const button = document.querySelector('#button');
-const hexCodeOutput = document.querySelector('#hexCodeOutput');
+const h3 = document.querySelector('h3');
 
 // Function that creates a random hex code and returns the value
 function getRandomColor() {
@@ -26,8 +26,9 @@ function getContrastYIQ(hexcolor){
 // Listening for button press
 button.addEventListener('click', () => {
     let generatedColor = getRandomColor();
-    body.style.backgroundColor = generatedColor;
-    body.style.color = getContrastYIQ(generatedColor)
-    hexCodeOutput.innerHTML = generatedColor;
+    colourArea.style.backgroundColor = generatedColor;
+    button.style.color = generatedColor;
+    button.style.borderColor = generatedColor;
+    h3.style.color = getContrastYIQ(generatedColor)
     console.log('Color has been changed!')
 })
