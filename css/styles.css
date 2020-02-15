@@ -81,6 +81,10 @@ button {
     transition: 0.4s;
 }
 
+.portfolioLink {
+    display: none;
+}
+
 @media (min-width: 768px) {
 
     .logo {
@@ -120,6 +124,8 @@ button {
     h3 {
         font-size: 40px;
     }
+
+
 }
 
 @media (min-width: 1366px) {
@@ -159,6 +165,25 @@ button {
 
     button:focus {
         outline: 0;
+    }
+
+    .portfolioLink {
+        display: block;
+        text-align: left !important;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .portfolioLink p {
+        font-size: 14px;
+        padding: 0;
+        margin-bottom: 50px;
+        color: #CCCCCC;
+    }
+
+    .portfolioLink p a {
+        color: #CCCCCC;
+        text-decoration: none;
     }
 } 
 
