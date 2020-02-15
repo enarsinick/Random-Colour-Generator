@@ -27,8 +27,8 @@ function getContrastYIQ(hexcolor){
 button.addEventListener('click', () => {
     let generatedColor = getRandomColor();
     colourArea.style.backgroundColor = generatedColor;
-    button.style.color = generatedColor;
-    button.style.borderColor = generatedColor;
+    // button.style.color = generatedColor;
+    // button.style.borderColor = generatedColor;
     h3.style.color = getContrastYIQ(generatedColor)
     console.log('Color has been changed!')
 })
